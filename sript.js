@@ -1,6 +1,11 @@
-$(document).ready(function() {
+var today = moment();
+console.log(today);
+$("#currentDay").text(today.format("MMM Do, YYYY"));
+var key = 'form-control-lg';
+localStorage.setItem(key, 'Value');
 
-    // First we need to grab the reference to the HTML element on the page
+$(document).ready(function() {
+        // First we need to grab the reference to the HTML element on the page
     // We attach an Event Listener 
     $(".btn").on("click", function() {
         console.log( $(this) );
