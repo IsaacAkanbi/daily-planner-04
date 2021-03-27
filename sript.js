@@ -5,8 +5,8 @@ var userInputEl = "";
 var inputId = "";
 var fieldId = ["nine","ten", "eleven", "twelve", "one", "two", "three", "four", "five"]; 
 var myActivity = "";
-$("#currentDay").text(today.format("MMM Do, YYYY"));
-
+$("#currentDay").text(today.format('MMMM Do YYYY, h:mm:ss a'));
+//text(today.format('MMMM Do YYYY, h:mm:ss a'))
 $(document).ready(function() {
            // attach an Event Listener 
     $(".btn").on("click", function() {
